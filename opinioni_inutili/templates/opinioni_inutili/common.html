@@ -22,15 +22,17 @@
         </a>
         <h2 class="logo">Opinioni Inutili</h2>
         <nav class="navigation">
-            <a class="a" href="#">Home</a>
+            <a class="a" href="{% url 'home' %}">Home</a>
             <a class="a" href="#">About</a>
-            <a class="a" href="#">Services</a>
+            <a class="a" href="{% url 'seriously' %}">Services</a>
             <a class="a" href="#">Contact</a>
             <a href="{% url 'login' %}">
                 <button class="btnLogin-popup">Login</button>
             </a>
         </nav>
     </header>
+
+    <div style="margin-top: 90px;"></div>
 
     {% block content %}
     {% endblock %}

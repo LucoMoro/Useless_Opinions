@@ -22,6 +22,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 from dotenv import load_dotenv
+
 load_dotenv()
 SECRET_KEY = os.getenv("SECRET_KEY")
 

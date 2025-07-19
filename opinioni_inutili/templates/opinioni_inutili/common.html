@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <a class="logo" href="{% url 'home' %}">
             {% load static %}
             <img src="{% static 'opinioni_inutili/logo.png' %}" alt="" width="40" height="40">
@@ -27,7 +27,7 @@
             <a class="a" href="#">Services</a>
             <a class="a" href="#">Contact</a>
             <a href="{% url 'login' %}">
-                <button class="btnLogin-popup">Contattaci</button>
+                <button class="btnLogin-popup">Login</button>
             </a>
         </nav>
     </header>

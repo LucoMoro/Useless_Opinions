@@ -14,3 +14,6 @@ def login(request):
 
 def register(request):
     return render(request, 'opinioni_inutili/register.html')
+
+def seriously(request):
+    return render(request, 'opinioni_inutili/seriously.html')

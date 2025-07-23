@@ -11,16 +11,16 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     {% load static %}
     <link rel="stylesheet" href="{% static 'opinioni_inutili/style.css' %}">
-    <title>Fullstack Sushi</title>
+    <title>Opinioni Inutili</title>
 </head>
 
 <body>
     <header class="header">
         <a class="logo" href="{% url 'home' %}">
             {% load static %}
-            <img src="{% static 'opinioni_inutili/logo.png' %}" alt="" width="40" height="40">
+            <img src="{% static 'opinioni_inutili/logo.png' %}" alt="" width="80" height="80">
         </a>
-        <h2 class="logo">Opinioni Inutili</h2>
+        <!--<h2 class="logo">Opinioni Inutili</h2>-->
         <nav class="navigation">
             <a class="a" href="{% url 'home' %}">Home</a>
             <a class="a" href="#">About</a>
@@ -32,8 +32,6 @@
         </nav>
     </header>
 
-    <div style="margin-top: 90px;"></div>
-
     {% block content %}
     {% endblock %}
 
@@ -43,5 +41,9 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
+
+<footer class="footer">
+    Test
+</footer>
 
 </html>

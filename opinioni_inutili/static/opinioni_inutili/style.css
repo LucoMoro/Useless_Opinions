@@ -6,6 +6,11 @@
   --accent-color: #e60000;
 }
 
+.body_content {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
 * {
     margin: 0;
     padding: 0;

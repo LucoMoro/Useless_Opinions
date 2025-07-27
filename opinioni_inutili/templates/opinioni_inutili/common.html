@@ -20,12 +20,12 @@
             {% load static %}
             <img src="{% static 'opinioni_inutili/logo.png' %}" alt="" width="80" height="80">
         </a>
-        <!--<h2 class="logo">Opinioni Inutili</h2>-->
+        <h2 class="logo-text">Opinioni Inutili</h2>
         <nav class="navigation">
             <a class="a" href="{% url 'home' %}">Home</a>
-            <a class="a" href="#">About</a>
-            <a class="a" href="{% url 'seriously' %}">Services</a>
-            <a class="a" href="#">Contact</a>
+            <a class="a" href="#">Chi siamo</a>
+            <a class="a" href="{% url 'seriously' %}">Servizi</a>
+            <a class="a" href="#">Contattaci</a>
             <a href="{% url 'login' %}">
                 <button class="btnLogin-popup">Login</button>
             </a>
@@ -40,10 +40,48 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </body>
 
 <footer class="footer">
-    Test
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>Chi siamo</h4>
+                <ul>
+                    <li><a href="#">Rozzi</a></li>
+                    <li><a href="#">Moro</a></li>
+                    <li><a href="#">Aurora</a></li>
+                    <li><a href="#">Bleffo</a></li>
+                    <li><a href="#">Ginevra</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Chiedi aiuto</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Stato dell'ordine</a></li>
+                    <li><a href="#">Opzioni di pagamento</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Shop Online</h4>
+                <ul>
+                    <li><a href="#">Vestiti</a></li>
+                    <li><a href="#">Tazze</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Seguici</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-discord"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitch"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 </html>

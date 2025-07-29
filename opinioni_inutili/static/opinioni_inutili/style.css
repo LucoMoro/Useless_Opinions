@@ -4,6 +4,8 @@
   --buttons_text_hover: white;
   --primary-color: #343536;
   --accent-color: #e60000;
+  --darker_buttons_text: #bd2929;
+  --dark_buttons_text: #cf1717;
 }
 
 .body_content {
@@ -42,10 +44,15 @@ header {
 }
 
 .logo {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #fff;
     user-select: none;
     position: left;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: #fff;
 }
 
 .logo-text {
@@ -337,4 +344,39 @@ body {
 .footer-col .social-links a:hover {
     color: var(--accent-color);
     background-color: var(--buttons_text_hover);
+}
+
+.button {
+    display: inline-flex;
+    height: 50px;
+    padding: 0;
+    background-color: var(--buttons_text);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: var(--dark_buttons_text);
+}
+
+.button:active {
+    background: var(--darker_buttons_text);
+}
+
+.button_text, .button_icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: var(--buttons_text_hover);
+    height: 100%;
+}
+
+.button_icon {
+    font-size: 1.5em;
+    background: rgba(0, 0, 0, .08);
 }
